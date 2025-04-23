@@ -37,11 +37,21 @@ public class LinkedListDemo {
         }
     }
 
-    public static void main(String[] args) {
-        LinkedList list = new LinkedList();
-        list.add(10);
-        list.add(20);
-        list.add(30);
+   
+        public static void main(String[] args) {
+    LinkedList list = new LinkedList();
+    list.add(10);
+    list.add(20);
+    list.add(30);
+    
+    // 👇 New elements added by collaborator
+    list.add(40);
+    list.add(50);
+
+    System.out.print("Current list: ");
+    list.printList();
+}
+
 
         System.out.print("Current list: ");
         list.printList();
